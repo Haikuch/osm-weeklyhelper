@@ -1,0 +1,4 @@
+services:
+    mlcollect.collect:
+        class:      MlcollectBundle\Utils\Collect
+        arguments:  [%mlcollect.imap_server%, %mlcollect.imap_box%, %mlcollect.imap_user%, %mlcollect.imap_password%, %osmbc.token%, %mlcollect.from_email%, %mlcollect.from_name%]    

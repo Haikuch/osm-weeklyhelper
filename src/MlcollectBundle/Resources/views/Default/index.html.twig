@@ -1,0 +1,14 @@
+{% for data in datas %}
+    Collection: {{ data.collection }}   <br> 
+    Email: {{ data.email }}<br>    
+    {% if data.markdown is defined %}Markdown: {{ data.markdown }}<br>{% endif %}
+    {% if data.markdownDE is defined %}Markdown: {{ data.markdownDE }}<br>{% endif %}
+    {% if data.markdownEN is defined %}Markdown: {{ data.markdownEN }}<br>{% endif %}
+    {% if data.markdownJP is defined %}Markdown: {{ data.markdownJP }}<br>{% endif %}
+    {% if data.markdownES is defined %}Markdown: {{ data.markdownES }}<br>{% endif %}
+    {% if data.markdownFR is defined %}Markdown: {{ data.markdownFR }}<br>{% endif %}
+    <br>
+    Antwort: <i>{{ data.result }}</i>
+{% endfor %}
+<br>
+<br>

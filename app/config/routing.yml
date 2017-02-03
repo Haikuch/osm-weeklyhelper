@@ -1,0 +1,7 @@
+mlcollect:
+    resource: "@MlcollectBundle/Resources/config/routing.yml"
+    prefix:   /mlcollect/
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
