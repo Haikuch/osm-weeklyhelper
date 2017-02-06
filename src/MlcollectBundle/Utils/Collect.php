@@ -143,7 +143,8 @@ class Collect {
         $title = $this->getTitleBySubject($subject);
         
         #todo: reformat link by maildate
-        $link = 'https://lists.openstreetmap.org/pipermail/'.$slug.'/'.date('Y', time()).'-'.date('F', time()).'';
+        $tld = ($slug == 'talk-ch') ? 'ch' : 'org'; #TODO dirty fix
+        $link = 'http://lists.openstreetmap.' . $tld . '/pipermail/'.$slug.'/'.date('Y', time()).'-'.date('F', time()).'';
         $threadLink = $link . '/thread.html';
         
         $html = file_get_contents($threadLink);
