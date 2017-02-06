@@ -194,6 +194,7 @@ class Collect {
             'talk-us' => 'talk-us',            
             'talk-br' => 'talk-br',
             'talk-pt' => 'talk-pt',
+            'osm-dev' => 'osm-dev',
         ];
         
         if (!isset($allowedSlugs[strtolower($slug[1])])) {
