@@ -188,6 +188,7 @@ class Collect {
         //test if slugs are allowed
         $allowedSlugs = [
             'tagging' => 'tagging',
+            'maproulette' => 'maproulette',
             'hot' => 'hot',
             'talk-de' => 'talk-de',
             'talk-ch' => 'talk-ch', 
@@ -195,6 +196,7 @@ class Collect {
             'talk-us' => 'talk-us',            
             'talk-br' => 'talk-br',
             'talk-pt' => 'talk-pt',
+            'talk-gb' => 'talk-gb',
             'osm-dev' => 'dev',
             'osm-talk-ie' => 'talk-ie',
         ];
